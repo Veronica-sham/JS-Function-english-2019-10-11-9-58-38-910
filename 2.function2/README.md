@@ -9,3 +9,10 @@ function palindrome(message){
 palindrome('hello'); // should return false
 palindrome('abcba'); // should return true
 ```
+function palindrome(text) {
+// Split, reverse and join string to get reversed text
+var reversedText  = text.toLowerCase()
+                    .split('').reverse().join('');
+
+return text === reversedText;
+}
